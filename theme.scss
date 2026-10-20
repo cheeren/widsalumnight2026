@@ -1,0 +1,231 @@
+/*-- scss:defaults --*/
+
+// ===========================================
+// FONTS
+// Quicksand for headings (rounded, soft, loopy geometry)
+// Nunito for body (rounded terminals, warm readability)
+// ===========================================
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Nunito:wght@400;500;600&display=swap');
+
+$font-family-sans-serif: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif !default;
+$presentation-heading-font: 'Quicksand', $font-family-sans-serif !default;
+$presentation-heading-font-weight: 500 !default;
+
+// ===========================================
+// FONT SIZES
+// ===========================================
+$presentation-font-size-root: 36px !default;
+$presentation-h1-font-size: 2.0em !default;
+$presentation-h2-font-size: 1.5em !default;
+$presentation-h3-font-size: 1.2em !default;
+
+// ===========================================
+// SPACING
+// ===========================================
+$presentation-line-height: 1.6 !default;
+$presentation-block-margin: 0.6em !default;
+
+// ===========================================
+// SPIROGRAPH PALETTE ON DARK
+//
+// golden yellow:       #f0d255  rgb(240, 210, 85)
+// warm orange:         #d26923  rgb(210, 105, 35)
+// brick red:           #a03c32  rgb(160, 60, 50)
+// deep magenta-purple: #7d196e  rgb(125, 25, 110)
+// dusty purple:        #825a9b  rgb(130, 90, 155)
+// cobalt blue:         #3255a5  rgb(50, 85, 165)
+// slate blue-grey:     #8296a0  rgb(130, 150, 160)
+// forest green:        #286e50  rgb(40, 110, 80)
+// ===========================================
+$body-bg: #121418 !default;
+$body-color: #e0d6cc !default;
+$link-color: #f0d255 !default;
+$presentation-heading-color: #f0d255 !default;
+
+$code-block-bg: #1a1d22 !default;
+$code-color: #f0d255 !default;
+
+/*-- scss:rules --*/
+
+// ===========================================
+// HEADINGS
+// ===========================================
+.reveal h1, .reveal h2, .reveal h3 {
+  text-transform: none;
+  letter-spacing: -0.02em;
+}
+
+.reveal h2 {
+  border-bottom: 2px solid rgba(130, 90, 155, 0.5);
+  padding-bottom: 0.15em;
+  margin-bottom: 0.6em;
+}
+
+// No border on title slide
+.reveal .title-slide h2,
+.reveal section[data-background-iframe] h2 {
+  border-bottom: none;
+}
+
+// Title slide styling
+.reveal .title-slide h1.title {
+  font-size: 1.8em;
+  color: #f0d255;
+}
+
+.reveal .title-slide p.subtitle {
+  color: #8296a0;
+}
+
+.reveal .title-slide p.author {
+  color: #825a9b;
+}
+
+// ===========================================
+// LISTS
+// ===========================================
+.reveal .slides ul,
+.reveal .slides ol {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+
+  li {
+    margin-bottom: 0.4em;
+    line-height: 1.5;
+  }
+}
+
+// ===========================================
+// BLOCKQUOTES — the big spoken lines
+// ===========================================
+.reveal blockquote {
+  border-left: 4px solid #825a9b;
+  padding: 0.5em 1em;
+  font-style: italic;
+  color: #d0d0d0;
+  background: rgba(130, 90, 155, 0.08);
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+// ===========================================
+// CODE
+// ===========================================
+.reveal pre {
+  font-size: 0.55em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 1px solid #2a2d36;
+}
+
+.reveal pre code {
+  padding: 1em;
+  max-height: 500px;
+  line-height: 1.4;
+}
+
+.reveal code {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+// ===========================================
+// TABLES
+// ===========================================
+.reveal table {
+  font-size: 0.75em;
+  margin: 0.5em auto;
+  border-collapse: collapse;
+
+  th {
+    background-color: rgba(130, 90, 155, 0.15);
+    font-weight: 600;
+    border-bottom: 2px solid rgba(130, 90, 155, 0.4);
+  }
+
+  td, th {
+    padding: 0.4em 0.8em;
+    border: 1px solid #2a2d36;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+}
+
+// ===========================================
+// LINKS
+// ===========================================
+.reveal a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+    color: #d26923;
+  }
+}
+
+// ===========================================
+// CLASS DEMO — purple-bordered iframes
+// ===========================================
+.class-demo iframe {
+  width: 100%;
+  height: 580px;
+  border: 5px solid #825a9b;
+  border-radius: 8px;
+  background: white;
+}
+
+.class-demo .slide-label {
+  font-size: 0.6em;
+  color: #825a9b;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 0.3em;
+}
+
+// No heading border on class demo slides
+.class-demo h2 {
+  border-bottom: none;
+  font-size: 1.1em;
+  color: #8296a0;
+}
+
+// ===========================================
+// EMPHASIS COLORS from palette
+// ===========================================
+.yellow  { color: #f0d255; }
+.orange  { color: #d26923; }
+.red     { color: #a03c32; }
+.magenta { color: #7d196e; }
+.purple  { color: #825a9b; }
+.blue    { color: #3255a5; }
+.slate   { color: #8296a0; }
+.green   { color: #286e50; }
+
+// ===========================================
+// UTILITIES
+// ===========================================
+.center { text-align: center; }
+.muted  { opacity: 0.6; }
+
+.reveal .slides section {
+  &.smaller, & .smaller {
+    font-size: 0.8em;
+  }
+  &.medium, & .medium {
+    font-size: 0.9em;
+  }
+}
+
+// ===========================================
+// COLUMNS
+// ===========================================
+.reveal .columns {
+  gap: 1.5em;
+}

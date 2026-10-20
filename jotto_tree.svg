@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 570">
+  <style>
+    .guess-node { fill: #825a9b; }
+    .answer-node { fill: #286e50; }
+    .word { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 22px; font-weight: 700; fill: white; }
+    .elabel { font-family: 'Quicksand', sans-serif; font-size: 15px; fill: #f0d255; font-weight: 700; }
+    .edge { stroke: #8296a0; stroke-width: 1.8; }
+    .note { font-family: 'Quicksand', sans-serif; font-size: 11px; fill: #8296a0; }
+  </style>
+
+  <!-- edges -->
+  <line class="edge" x1="420" y1="58" x2="150" y2="102"/>
+  <line class="edge" x1="420" y1="58" x2="700" y2="102"/>
+  <line class="edge" x1="150" y1="128" x2="150" y2="172"/>
+  <line class="edge" x1="150" y1="198" x2="150" y2="242"/>
+  <line class="edge" x1="150" y1="268" x2="150" y2="312"/>
+  <line class="edge" x1="700" y1="128" x2="550" y2="172"/>
+  <line class="edge" x1="700" y1="128" x2="840" y2="172"/>
+  <line class="edge" x1="550" y1="198" x2="550" y2="242"/>
+  <line class="edge" x1="840" y1="198" x2="700" y2="242"/>
+  <line class="edge" x1="840" y1="198" x2="920" y2="242"/>
+  <line class="edge" x1="700" y1="268" x2="700" y2="312"/>
+  <line class="edge" x1="920" y1="268" x2="920" y2="312"/>
+  <line class="edge" x1="920" y1="338" x2="920" y2="382"/>
+  <line class="edge" x1="920" y1="408" x2="920" y2="452"/>
+  <line class="edge" x1="920" y1="478" x2="920" y2="522"/>
+
+  <!-- edge labels -->
+  <text class="elabel" x="272" y="72">0</text>
+  <text class="elabel" x="568" y="72">1</text>
+  <text class="elabel" x="162" y="153">0</text>
+  <text class="elabel" x="162" y="223">1</text>
+  <text class="elabel" x="162" y="293">0</text>
+  <text class="elabel" x="618" y="145">0</text>
+  <text class="elabel" x="778" y="145">1</text>
+  <text class="elabel" x="562" y="223">2</text>
+  <text class="elabel" x="762" y="215">0</text>
+  <text class="elabel" x="888" y="215">1</text>
+  <text class="elabel" x="712" y="293">1</text>
+  <text class="elabel" x="932" y="293">1</text>
+  <text class="elabel" x="932" y="363">1</text>
+  <text class="elabel" x="932" y="433">1</text>
+  <text class="elabel" x="932" y="503">1</text>
+
+  <!-- guess nodes (purple) -->
+  <rect class="guess-node" x="375" y="27" width="90" height="36" rx="18"/>
+  <text class="word" x="420" y="52" text-anchor="middle">NOR</text>
+
+  <rect class="guess-node" x="105" y="97" width="90" height="36" rx="18"/>
+  <text class="word" x="150" y="122" text-anchor="middle">YAK</text>
+
+  <rect class="guess-node" x="655" y="97" width="90" height="36" rx="18"/>
+  <text class="word" x="700" y="122" text-anchor="middle">OAT</text>
+
+  <rect class="guess-node" x="105" y="167" width="90" height="36" rx="18"/>
+  <text class="word" x="150" y="192" text-anchor="middle">GEL</text>
+
+  <rect class="guess-node" x="505" y="167" width="90" height="36" rx="18"/>
+  <text class="word" x="550" y="192" text-anchor="middle">INK</text>
+
+  <rect class="guess-node" x="795" y="167" width="90" height="36" rx="18"/>
+  <text class="word" x="840" y="192" text-anchor="middle">JOG</text>
+
+  <rect class="guess-node" x="105" y="237" width="90" height="36" rx="18"/>
+  <text class="word" x="150" y="262" text-anchor="middle">PUG</text>
+
+  <rect class="guess-node" x="655" y="237" width="90" height="36" rx="18"/>
+  <text class="word" x="700" y="262" text-anchor="middle">NAP</text>
+
+  <rect class="guess-node" x="875" y="237" width="90" height="36" rx="18"/>
+  <text class="word" x="920" y="262" text-anchor="middle">MOB</text>
+
+  <rect class="guess-node" x="875" y="307" width="90" height="36" rx="18"/>
+  <text class="word" x="920" y="332" text-anchor="middle">OIL</text>
+
+  <rect class="guess-node" x="875" y="377" width="90" height="36" rx="18"/>
+  <text class="word" x="920" y="402" text-anchor="middle">SOY</text>
+
+  <rect class="guess-node" x="875" y="447" width="90" height="36" rx="18"/>
+  <text class="word" x="920" y="472" text-anchor="middle">WOO</text>
+
+  <!-- answer nodes (green) -->
+  <rect class="answer-node" x="105" y="307" width="90" height="36" rx="18"/>
+  <text class="word" x="150" y="332" text-anchor="middle">DEW</text>
+
+  <rect class="answer-node" x="505" y="237" width="90" height="36" rx="18"/>
+  <text class="word" x="550" y="262" text-anchor="middle">NIP</text>
+
+  <rect class="answer-node" x="655" y="307" width="90" height="36" rx="18"/>
+  <text class="word" x="700" y="332" text-anchor="middle">NUT</text>
+
+  <rect class="answer-node" x="875" y="517" width="90" height="36" rx="18"/>
+  <text class="word" x="920" y="542" text-anchor="middle">FOX</text>
+
+  <!-- legend -->
+  <text class="note" x="30" y="560">edge label = letters in common with guess</text>
+</svg>

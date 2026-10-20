@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RGB Cube</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Nunito', sans-serif; background: #121418; }
+        #plot { width: 100%; height: 100vh; }
+        #toggle {
+            position: absolute; top: 16px; right: 16px; z-index: 10;
+            font: 600 20px 'Quicksand', sans-serif;
+            padding: 10px 18px; border-radius: 8px; cursor: pointer;
+            background: #1a1d22; color: #f0d255; border: 2px solid #286e50;
+        }
+        #toggle:hover { background: #286e50; color: #e0d6cc; }
+    </style>
+</head>
+<body>
+    <button id="toggle">remove green</button>
+    <div id="plot"></div>
+    <script>
+        // Same 5x5x5 grid as the CPSC 203 cube; the button collapses it to the G = 0 plane
+        const n = 5;
+        const x = [], y = [], z = [], colors = [], custom = [];
+
+        for (let r = 0; r < n; r++) {
+            for (let g = 0; g < n; g++) {
+                for (let b = 0; b < n; b++) {
+                    x.push(r);
+                    y.push(g);
+                    z.push(b);
+                    const rVal = Math.round(r * 255 / (n - 1));
+                    const gVal = Math.round(g * 255 / (n - 1));
+                    const bVal = Math.round(b * 255 / (n - 1));
+                    colors.push(`rgb(${rVal},${gVal},${bVal})`);
+                    custom.push([rVal, gVal, bVal]);
+                }
+            }
+        }
+
+        // Indices of points with no green
+        const flat = x.map((_, i) => i).filter(i => y[i] === 0);
+        const pick = arr => flat.map(i => arr[i]);
+
+        const trace = (xs, ys, zs, cs, cd) => ({
+            type: 'scatter3d',
+            mode: 'markers',
+            x: xs, y: ys, z: zs,
+            marker: { size: 12, color: cs, line: { color: 'rgba(200,200,200,0.3)', width: 0.5 } },
+            hovertemplate: 'R: %{customdata[0]}<br>G: %{customdata[1]}<br>B: %{customdata[2]}<extra></extra>',
+            customdata: cd
+        });
+
+        const axis = title => ({
+            title: { text: title, font: { color: '#e0d6cc', size: 18 } },
+            range: [-0.5, n - 0.5], tickvals: [0, n - 1], ticktext: ['0', '255'],
+            tickfont: { color: '#8296a0' },
+            gridcolor: '#2a2d36', zerolinecolor: '#2a2d36', backgroundcolor: '#121418'
+        });
+
+        const layout = {
+            scene: {
+                xaxis: axis('Red'),
+                yaxis: axis('Green'),
+                zaxis: axis('Blue'),
+                aspectmode: 'cube',
+                camera: { eye: { x: 1.5, y: 1.5, z: 1.2 } }
+            },
+            margin: { l: 0, r: 0, t: 0, b: 0 },
+            paper_bgcolor: '#121418',
+            plot_bgcolor: '#121418'
+        };
+
+        const config = { displayModeBar: false, responsive: true };
+
+        let full = true;
+        Plotly.newPlot('plot', [trace(x, y, z, colors, custom)], layout, config);
+
+        document.getElementById('toggle').addEventListener('click', () => {
+            full = !full;
+            const t = full ? trace(x, y, z, colors, custom)
+                           : trace(pick(x), pick(y), pick(z), pick(colors), pick(custom));
+            Plotly.react('plot', [t], layout, config);
+            document.getElementById('toggle').textContent = full ? 'remove green' : 'add green back';
+        });
+    </script>
+</body>
+</html>
