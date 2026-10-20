@@ -79,6 +79,7 @@ Gesture back at the game. "That's what learning feels like when it's going well.
 Pause. Advance.
 :::
 
+
 ## Puzzled Pint
 
 ![](images/puzzled_pint.png){fig-align="center" height="500"}
@@ -86,7 +87,7 @@ Pause. Advance.
 ::: {.notes}
 Puzzled Pint: a monthly puzzle night at a bar. Old friends, new friends, a former student, my kid's girlfriend. A very mixed group.
 
-"I'm not especially good at puzzles. I'm a learner there, every month. One night Rose and I got something at the same moment, and we BOTH felt like we'd conquered it. Nobody at the table could have solved it alone. And by now we know who likes which kinds of puzzles. (Well, Ellen can do all of them, but she's really patient with the rest of us.)"
+So common: one person sees it, and everyone else just KNOWS they're right. Nobody could have produced it alone, but the whole table recognizes it instantly.
 
 For the alums: "You graduated. You didn't stop learning. So where does it happen now? I bet it happens somewhere like this: a table, people, a problem nobody can do alone."
 :::
@@ -238,7 +239,7 @@ $$V - E + F = 2$$
 ##
 
 ::: {.principle}
-[The critical information was]{.yellow} [spread across the room.]{.orange}
+[The critical information was]{.yellow} [spread out among you.]{.orange}
 :::
 
 ::: {.cite}
@@ -251,26 +252,12 @@ Wegner: transactive memory. Groups learn who knows what, and the group itself be
 "None of that shows up on a post-test about surface tension. All of it just happened at your table."
 :::
 
-## Who said the outside counts?
-
-![](images/puzzled_pint.png){fig-align="center" height="480"}
-
-::: {.notes}
-PLACEHOLDER IMAGE. Swap for a photo from tonight if someone can snap the tables during the Euler activity, or a simple illustration of one person at a table pointing at a card.
-
-Tell it as a story about the person at the table:
-
-"Think about the person at your table who said 'I think the outside counts as a face.' They weren't a textbook. They didn't come with any authority. You had to actually listen to them, decide whether they were right, and be decent to them while you figured it out."
-
-"And the obvious objection: the tutor talks back too. Isn't that communication? It talks back. But it doesn't need anything from you. It has no stake in whether you're right. It isn't confused in a way you could help with. It won't remember that you were the one who saw the outer face. And you don't have to be kind to it, or listen to it carefully."
-:::
-
 ##
 
 ::: {.principle}
 [A machine gives]{.slate} [*the* answer.]{.slate}
 
-[A person gives]{.orange} [a response.]{.yellow}
+[People give]{.orange} [responses.]{.yellow}
 :::
 
 ::: {.notes}
@@ -281,10 +268,24 @@ Tell it as a story about the person at the table:
 "Careful listening is a deeply human skill. Hold on to that; it comes back in Part 3."
 :::
 
-# [Part 3]{.slate style="font-size: 0.5em; display: block;"} [Diversity of Voice]{.purple}
+# [Part 3]{.slate style="font-size: 0.5em; display: block;"} [Diversity]{.purple}
 
 ::: {.notes}
 "So everyone holds a piece. Here's the part I care about most: it matters *whose* pieces are in the room."
+:::
+
+## The colour cube {.class-demo}
+
+<iframe src="rgb_cube.html"></iframe>
+
+::: {.notes}
+Spin it. Every colour a screen can show is a point in this cube.
+
+Click "remove green." The cube collapses to one face. Purples.
+
+"Here's what gets me. If you'd only ever lived on this face, you wouldn't think anything was missing. Purple would look like the whole world. You can't see a dimension you never had."
+
+Click "add green back."
 :::
 
 ## What do you notice?
@@ -357,7 +358,7 @@ Woolley, Chabris, Pentland, Hashmi & Malone (2010), *Science*
 :::
 
 ::: {.notes}
-"And there's data on this."
+"And there's data that ties all three together."
 
 Woolley et al.: a single factor, c, predicts group performance across very different tasks. Average and maximum individual intelligence barely predict it.
 
@@ -368,14 +369,62 @@ Turn-taking: groups where a few voices dominate the conversation do worse. Diver
 And c rises with the proportion of women in the group, largely explained by social sensitivity. Let the WiDS room enjoy that one.
 :::
 
+<!-- SUMMARY + TRANSITION to the conclusion -->
+
+## What happened tonight
+
+::: {.columns style="text-align: center; margin-top: 1.2em;"}
+::: {.column width="33%"}
+[Jotto]{.slate style="font-size: 0.7em;"}
+
+[**Negotiation & collaboration**]{.yellow style="font-family: Quicksand; font-size: 1.1em; display: block; min-height: 2.8em; line-height: 1.3;"}
+
+[You agreed on one word, with no leader.]{style="font-size: 0.75em;"}
+:::
+::: {.column width="33%"}
+[Euler's cards]{.slate style="font-size: 0.7em;"}
+
+[**Distributed data**]{.orange style="font-family: Quicksand; font-size: 1.1em; display: block; min-height: 2.8em; line-height: 1.3;"}
+
+[Nobody could find the rule from one card.]{style="font-size: 0.75em;"}
+:::
+::: {.column width="33%"}
+[The colour cube]{.slate style="font-size: 0.7em;"}
+
+[**Diversity**]{.purple style="font-family: Quicksand; font-size: 1.1em; display: block; min-height: 2.8em; line-height: 1.3;"}
+
+[Leave out a dimension and you can't see what's missing.]{style="font-size: 0.75em;"}
+:::
+:::
+
+::: {style="text-align: center; font-family: Quicksand; font-size: 1.2em; margin-top: 1.8em;"}
+[None of it works alone.]{.green}
+:::
+
+::: {.notes}
+Slow down. This is the turn toward the end.
+
+"Three things happened in this room tonight. You negotiated: a whole room agreed on one word, and nobody was in charge. You pooled distributed data: the rule wasn't on any one card. And you saw that it matters whose voices are in the room, because a missing dimension is invisible from the inside."
+
+"None of those is something you can do with a tutor at 3am. And all three are exactly what the people in this room who are working do every day."
+
+Then: "And there's data that ties all three together."
+:::
+
 ## Alums: a quick poll
 
 ::: {.principle style="font-size: 1.2em; padding-top: 1em;"}
 Was the hardest part of your job last month [**technical**]{.slate}?
 :::
 
-::: {style="text-align: center; font-size: 0.8em; color: #8296a0; margin-top: 2em;"}
-Or was it the [**question**]{.yellow} someone was really asking &emsp;·&emsp; the data that [**couldn't answer it**]{.orange} &emsp;·&emsp; what a [**column means**]{.purple}?
+::: {style="text-align: center; margin-top: 1.5em;"}
+Or was it...
+:::
+
+::: {style="width: 80%; margin: 1em auto 0; font-size: 0.8em; color: #8296a0; line-height: 1.8;"}
+[figuring out the [**question**]{.yellow} someone was really asking?]{style="display: block; margin-left: 0;"}
+[telling someone their data [**can't answer it**]{.orange}?]{style="display: block; margin-left: 12%;"}
+[getting people to agree on what a [**column means**]{.purple}?]{style="display: block; margin-left: 24%;"}
 :::
 
 ::: {.notes}
@@ -396,8 +445,6 @@ If there's an alum you know well, ask them beforehand for a one-sentence story a
 
 ::: {.principle}
 [Every workplace is a group project.]{.yellow}
-
-[School is where we practice.]{.orange}
 :::
 
 ::: {.notes}
@@ -416,14 +463,12 @@ Then the practical part, said rather than shown. Don't end anti-AI; this audienc
 
 <!-- CLOSING: the one and only use of "expertise" -->
 
-##
+## Redefining the goal...
 
 ::: {.principle style="font-size: 1.4em;"}
 [Expertise isn't having *the* answer.]{.yellow}
 
-[It's making the room smarter.]{.orange}
-
-[You found that formula because the person next to you had a different card.]{.purple style="font-size: 0.6em; display: block; margin-top: 1.5em;"}
+[It's knowing how to nurture and elicit all the ideas, from every person.]{.orange}
 :::
 
 ::: {.notes}
