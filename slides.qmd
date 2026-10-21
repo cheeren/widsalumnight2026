@@ -398,7 +398,7 @@ And c rises with the proportion of women in the group, largely explained by soci
 :::
 
 ::: {style="text-align: center; font-family: Quicksand; font-size: 1.2em; margin-top: 1.8em;"}
-[None of it works alone.]{.green}
+[Each of these stories is different if the concept is learned in isolation.]{.green}
 :::
 
 ::: {.notes}
